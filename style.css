@@ -7,17 +7,17 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    color: #fff;
-    background: linear-gradient(to right, #4a90e2, #9013fe);
+    color: #333;
+    background-color: #f4f4f4; /* Light background for contrast */
 }
 
 /* Header */
 header {
     text-align: center;
-    padding: 5rem;
-    background: #283593; /* Dark Blue */
-    color: #ffeb3b; /* Yellow */
-    border-bottom: 5px solid #ffc107; /* Amber */
+    padding: 4rem 2rem;
+    background: #1d1d1d; /* Dark background */
+    color: #ffffff; /* White text */
+    border-bottom: 2px solid #e94e77; /* Accent color */
 }
 
 header h1 {
@@ -32,20 +32,20 @@ header p {
 
 /* Section Styles */
 section {
-    padding: 3rem;
+    padding: 3rem 2rem;
     text-align: center;
-    background: #3f51b5; /* Indigo */
+    background: #ffffff; /* White background */
     margin: 1rem 0;
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Skills */
 #skills .skill {
     margin: 1rem;
     padding: 1rem;
-    border: 2px solid #ffeb3b; /* Yellow */
-    color: #ffeb3b; /* Yellow */
+    border: 2px solid #e94e77; /* Accent color */
+    color: #e94e77; /* Accent color */
     font-weight: bold;
     display: inline-block;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -53,15 +53,15 @@ section {
 }
 
 #skills .skill:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(255, 235, 59, 0.5); /* Yellow glow */
-    background-color: #ffeb3b; /* Yellow */
-    color: #283593; /* Dark Blue */
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(233, 78, 119, 0.3); /* Accent glow */
+    background-color: #e94e77; /* Accent background on hover */
+    color: #ffffff; /* White text on hover */
 }
 
 /* Gallery */
 #gallery {
-    background: #303f9f; /* Darker Indigo */
+    background: #f9f9f9; /* Light grey */
 }
 
 #gallery .gallery-container {
@@ -77,12 +77,12 @@ section {
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
     border-radius: 8px;
-    border: 2px solid #ffeb3b; /* Yellow */
+    border: 2px solid #e94e77; /* Accent color */
 }
 
 .gallery-item:hover {
     transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(255, 235, 59, 0.5); /* Yellow glow */
+    box-shadow: 0 4px 10px rgba(233, 78, 119, 0.3); /* Accent glow */
 }
 
 /* Lightbox */
