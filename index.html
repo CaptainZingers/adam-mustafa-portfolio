@@ -1,59 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Adam Mustafa - Portfolio</title>
+  <base target="_blank">
+  <meta charset="UTF-8" />
+  <title>Anon Developer</title>
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
+  <!-- remember, jQuery is completely optional -->
+  <!-- <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script> -->
+  <script type="text/javascript" src="js/jquery.particleground.js"></script>
+  <script type="text/javascript" src="js/demo.js"></script>
 </head>
+
 <body>
-    <header>
-        <h1>Adam Mustafa</h1>
-        <p>Biomedical Engineer | Java & Python Developer</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>A brief description about yourself, your education, and your interests.</p>
-    </section>
+<div id="particles">
+  <div id="intro">
+      <h2 style="font-family: 'Syncopate', sans-serif; font-weight: 10;">Anon Developer&nbsp<a href="deedy.pdf" style="color: white;"><img src="https://png.icons8.com/office/40/000000/open-resume.png" height="35" width="35"></a></h2>
+        <hr style="width: 50%; background-color: #E83951; border-color: #E83951;">
+    <a href="https://www.linkedin.com/in/#/" style="color: white;"><i class="fab fa-linkedin" style="font-size: 2em;"></i></a>
+    &nbsp
+    <a href="https://www.facebook.com/#/" style="color: white;"><i class="fab fa-facebook" style="font-size: 2em;"></i></a>
+    &nbsp
+    <a href="https://github.com/#/" style="color: white;"><i class="fab fa-github" style="font-size: 2em;"></i></a>
+    &nbsp
+    <a href="https://medium.com/@#/" style="color: white;"><i class="fab fa-medium" style="font-size: 2em;"></i></a>
+  </div>
+</div>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skill">Java (1-2 years)</div>
-        <div class="skill">Python (3-4 years)</div>
-        <div class="skill">Biomedical Engineering</div>
-        <!-- Add more skills as needed -->
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="gallery-container">
-            <div class="gallery-item" onclick="openLightbox('images/project1.jpg')"></div>
-            <div class="gallery-item" onclick="openLightbox('images/project2.jpg')"></div>
-            <div class="gallery-item" onclick="openLightbox('images/project3.jpg')"></div>
-            <!-- Add more projects -->
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:adamqas321@gmail.com">adamqas321@gmail.com</a></p>
-        <p>Phone: +90 537 547 6886</p>
-        <a href="#" class="resume-link">Download Resume</a>
-    </section>
-
-    <div id="lightbox" onclick="this.style.display='none'">
-        <img id="lightbox-img" src="" alt="Lightbox Image">
-    </div>
-
-    <script src="js/script.js"></script>
 </body>
 </html>
