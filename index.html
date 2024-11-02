@@ -3,62 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adam Mustafa | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Adam Mustafa - Portfolio</title>
 </head>
 <body>
-
-    <!-- Header Section -->
-    <header id="home">
+    <header>
         <h1>Adam Mustafa</h1>
-        <p>Biomedical Engineer & Aspiring Radiology Specialist</p>
-        <p>Skilled in Python, Java, and Cybersecurity</p>
+        <p>Biomedical Engineer | Java & Python Developer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>I'm a biomedical engineer passionate about radiology and cybersecurity. I have experience in Python, Java, and I'm currently pursuing cybersecurity certifications like CCNA.</p>
+        <p>A brief description about yourself, your education, and your interests.</p>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
-        <div class="skill" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
-            <p>Python - 3+ years</p>
-        </div>
-        <div class="skill" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
-            <p>Java - 1-2 years</p>
-        </div>
-        <div class="skill" onmouseover="hoverEffect(this)" onmouseout="removeEffect(this)">
-            <p>Cybersecurity (CCNA in progress)</p>
-        </div>
+        <div class="skill">Java (1-2 years)</div>
+        <div class="skill">Python (3-4 years)</div>
+        <div class="skill">Biomedical Engineering</div>
+        <!-- Add more skills as needed -->
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <p>Click on the images below to see more of my work and experiences.</p>
+    <section id="projects">
+        <h2>Projects</h2>
         <div class="gallery-container">
-            <img src="https://via.placeholder.com/150" alt="Project Image 1" class="gallery-item" onclick="openImage(this)">
-            <img src="https://via.placeholder.com/150" alt="Project Image 2" class="gallery-item" onclick="openImage(this)">
-            <img src="https://via.placeholder.com/150" alt="Project Image 3" class="gallery-item" onclick="openImage(this)">
-            <!-- Add more images as needed -->
+            <div class="gallery-item" onclick="openLightbox('images/project1.jpg')"></div>
+            <div class="gallery-item" onclick="openLightbox('images/project2.jpg')"></div>
+            <div class="gallery-item" onclick="openLightbox('images/project3.jpg')"></div>
+            <!-- Add more projects -->
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: adamqas321@gmail.com | Phone: +90 537 547 6886</p>
-        <a href="resume.pdf" download>Download Resume</a>
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:adamqas321@gmail.com">adamqas321@gmail.com</a></p>
+        <p>Phone: +90 537 547 6886</p>
+        <a href="#" class="resume-link">Download Resume</a>
     </section>
 
-    <!-- Lightbox for Gallery -->
-    <div id="lightbox" onclick="closeImage()">
-        <img id="lightbox-img" src="">
+    <div id="lightbox" onclick="this.style.display='none'">
+        <img id="lightbox-img" src="" alt="Lightbox Image">
     </div>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
