@@ -7,15 +7,15 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #333;
-    background: linear-gradient(to right, #ffffff, #e0e0e0);
+    color: #222;
+    background: linear-gradient(to right, #f9f9f9, #e9e9f0);
 }
 
 /* Header */
 header {
     text-align: center;
     padding: 5rem;
-    background: #333;
+    background: #1e3a8a;
     color: #fff;
 }
 
@@ -35,18 +35,62 @@ section {
     text-align: center;
 }
 
+/* Skills */
 #skills .skill {
     margin: 1rem;
     padding: 1rem;
-    border: 1px solid #333;
+    border: 2px solid #1e3a8a;
+    color: #1e3a8a;
+    font-weight: bold;
     display: inline-block;
     transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
 }
 
-/* Hover Effect */
 #skills .skill:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px rgba(30, 58, 138, 0.5);
+    background-color: #1e3a8a;
+    color: #fff;
+}
+
+/* Gallery */
+#gallery .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery-item {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 8px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Lightbox */
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+#lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
 }
 
 /* Animation Keyframes */
