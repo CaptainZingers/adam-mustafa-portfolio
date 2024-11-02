@@ -35,11 +35,15 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-placeholder">
-            <p>Project coming soon...</p>
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Click on the images below to see more of my work and experiences.</p>
+        <div class="gallery-container">
+            <img src="https://via.placeholder.com/150" alt="Project Image 1" class="gallery-item" onclick="openImage(this)">
+            <img src="https://via.placeholder.com/150" alt="Project Image 2" class="gallery-item" onclick="openImage(this)">
+            <img src="https://via.placeholder.com/150" alt="Project Image 3" class="gallery-item" onclick="openImage(this)">
+            <!-- Add more images as needed -->
         </div>
     </section>
 
@@ -49,6 +53,11 @@
         <p>Email: adamqas321@gmail.com | Phone: +90 537 547 6886</p>
         <a href="resume.pdf" download>Download Resume</a>
     </section>
+
+    <!-- Lightbox for Gallery -->
+    <div id="lightbox" onclick="closeImage()">
+        <img id="lightbox-img" src="">
+    </div>
 
     <script src="script.js"></script>
 </body>
