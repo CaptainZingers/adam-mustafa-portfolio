@@ -1,0 +1,61 @@
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: linear-gradient(to right, #ffffff, #e0e0e0);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 5rem;
+    background: #333;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 3rem;
+    animation: fadeIn 2s;
+}
+
+header p {
+    margin-top: 1rem;
+    animation: fadeInUp 3s;
+}
+
+/* Section Styles */
+section {
+    padding: 3rem;
+    text-align: center;
+}
+
+#skills .skill {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #333;
+    display: inline-block;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect */
+#skills .skill:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
